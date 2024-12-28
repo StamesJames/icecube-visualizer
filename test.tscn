@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://7xsftcwcn5pu"]
+
+[ext_resource type="PackedScene" uid="uid://4r2wp2ahuo7q" path="res://scenes/sensor_ball.tscn" id="1_i55ig"]
+
+[node name="sensor_array" type="Node3D"]
+
+[node name="sensor_ball" parent="." instance=ExtResource("1_i55ig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+
+[node name="@Node3D@18022" parent="." instance=ExtResource("1_i55ig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
+
+[node name="@Node3D@18023" parent="." instance=ExtResource("1_i55ig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0)
