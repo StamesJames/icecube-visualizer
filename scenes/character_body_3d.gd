@@ -6,7 +6,7 @@ extends CharacterBody3D
 func _physics_process(_delta: float) -> void:
 	var input_dir := Input.get_vector("left", "right", "forward", "backward")
 	var input_vertical := Input.get_axis("down", "up")
-	var input_rot := Input.get_axis("rot_left", "rot_right")
+	# var input_rot := Input.get_axis("rot_left", "rot_right")
 	var direction := (transform.basis * Vector3(input_dir.x, input_vertical, input_dir.y)).normalized()
 	if direction:
 		velocity.x = direction.x * SPEED

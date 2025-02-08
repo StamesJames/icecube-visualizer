@@ -13,7 +13,7 @@ emission = Color(1, 0, 0, 1)
 script = ExtResource("1_xy2ic")
 
 [node name="visualse" type="Node3D" parent="."]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
 
 [node name="ball" type="MeshInstance3D" parent="visualse"]
 unique_name_in_owner = true
